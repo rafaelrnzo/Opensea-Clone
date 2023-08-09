@@ -6,6 +6,7 @@ import MainContent from './components/home/mainContent'
 // import GlassButton from './components/home/glassButton'
 import { ButtonCate, GlassButton, BaseButton } from './components/home/button'
 import { TrendRank } from './components/home/trend'
+import ListNFT from './components/home/listNf'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,7 +14,7 @@ function App() {
   return (
     <main className='max-h-screen max-w-screen '>
       <Navbar />
-      
+
       <content className="  flex flex-col ">
         <thumbnail className="px-8 p-6 -mb-3 -mr-12 gradient-box w-screen flex-col flex">
           <div className='flex gap-2 flex-row h-1/12'>
@@ -60,39 +61,28 @@ function App() {
             </div>
           </carousel>
         </thumbnail>
-        
-        <TrendRank/>
+
+        <TrendRank />
 
         <main className='w-screen h-screen px-8 p-4'>
-          <div className='container mx-auto'>
-            <p className='text-2xl text-black font-semibold tracking-normal pb-6'>Noteable Collections</p>
-            <cardList className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
-              
-              <button className="bg-white shadow-lg shadow-gray-200 rounded-xl h-[19rem] flex flex-col card-nf transition-all duration-300 hover:shadow-xl">
-                <div className='h-2/3'>
-                  <img src='https://i.seadn.io/gcs/files/ac716dd8eb1e068239fb70ab98fc77a9.png?auto=format&dpr=1&h=500' className='rounded-t-xl' />
-                </div>
-                <div className='card-list h-1/3 px-4 font-semibold justify-between flex flex-col pb-4  w-full'>
-                  <div className='flex justify-start'>
-                    <p>Fields by Gavin Meeler</p>
-                  </div>
-                  <div className='flex justify-between'>
-                    <div className='flex flex-col justify-start items-start'>
-                      <p className="text-sm font-thin">Floor</p>
-                      <p>0.03 ETH</p>
-                    </div>
-                    <div className='flex flex-col justify-start items-start'>
-                      <p className="text-sm font-thin">Floor</p>
-                      <p>0.03 ETH</p>
-                    </div>
-                  </div>
-                </div>
-              </button>
-
-            </cardList>
-          </div>
+          <ListNFT 
+            header='Noteable Collections' 
+            data={[
+              {
+                image: 'https://i.seadn.io/gcs/files/20d243b2d04be331e23b9f7f36216de4.png?auto=format&dpr=1&h=500&fr=1 1x, https://i.seadn.io/gcs/files/20d243b2d04be331e23b9f7f36216de4.png?auto=format&dpr=1&h=500&fr=1 2x',
+                title: 'Persons, Places & Thi...',
+                floor: '< 0.01 ETH',
+                volume: '8 ETH',
+              },
+              {
+                image: 'https://i.seadn.io/gcs/files/20d243b2d04be331e23b9f7f36216de4.png?auto=format&dpr=1&h=500&fr=1 1x, https://i.seadn.io/gcs/files/20d243b2d04be331e23b9f7f36216de4.png?auto=format&dpr=1&h=500&fr=1 2x',
+                title: 'Persons, Places & Things - Dustin Yellin x Nouns x FWB',
+                floor: '< 0.01 ETH',
+                volume: '8 ETH',
+              },
+            ]}
+          />
         </main>
-
       </content >
     </main >
   )
