@@ -2,7 +2,7 @@ import React from 'react';
 
 export const BaseButton = ({ children, onClick }) => {
   return (
-    <button className='rounded-lg p-2' onClick={onClick}>
+    <button className='rounded-lg p-2 bg-gray-200' onClick={onClick}>
       <p className='font-medium tracking-wider font-base'>
         {children}
       </p>

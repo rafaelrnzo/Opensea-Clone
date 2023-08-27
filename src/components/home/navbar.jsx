@@ -3,12 +3,13 @@ import InputWithIcon from './iconInput';
 import WalletRoundedIcon from '@mui/icons-material/WalletRounded';
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isSticky, setIsSticky] = useState(false);
 
   const handleScroll = () => {
-    setIsSticky(window.scrollY >= 100);
+    setIsSticky(window.scrollY >= 1);
   }
 
   useEffect(() => {
@@ -19,15 +20,15 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div id="nav-navbar" className={`bg-black w-screen p-3 px-12 flex-row flex justify-between items-center text-white ${isSticky ? ' text-black fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-white' : ''}`}>
-      <div className='flex-row flex items-center w-1/12 scale-125' >
+    <div id="nav-navbar" className={`z-10 w-screen p-3 px-12 flex-row flex justify-between items-center text-white fixed ${isSticky ? ' text-black fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-white border border-b-1 border-gray-300' : 'bg-transparent '}`}>
+      <Link to="/" className='flex-row flex items-center w-1/12 scale-125' >
         <img src={`${isSticky ?  "https://storage.googleapis.com/opensea-static/Logomark/OpenSea-Full-Logo%20(dark).svg" : "https://storage.googleapis.com/opensea-static/Logomark/OpenSea-Full-Logo%20(light).svg"}`}  className="h-10 mr-2" alt="" />
-      </div>
+      </Link>
       <div className='flex justify-center align-middle items-center'>
         <div className={`w-[1px] h-[2rem]  opacity-30 ml-4 ${isSticky ? 'bg-black ' : 'bg-white' }`}></div>
       </div>
       <div className='flex-row flex items-center justify-between pr-1 w-1/12'>
-        <a><p className={`font-semibold  ${isSticky ? ' text-black ' : ''}`}>Drops</p></a>
+        <Link to="/drops"><p className={`font-semibold  ${isSticky ? ' text-black ' : ''}`}>Drops</p></Link>
         <a><p className={`font-semibold  ${isSticky ? ' text-black ' : ''}`}>Stats</p></a>
       </div>
       <div className="search-container w-9/12 flex flex-row gap-3">

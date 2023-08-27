@@ -1,0 +1,21 @@
+.gradient-box-drops {
+  height: 90vh;
+  backdrop-filter: blur;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 20%, rgba(0, 0, 0, 0.8) 40%, rgba(255, 255, 255, 1) 100%),
+    url("https://i.seadn.io/s/primary-drops/0x35373efc2fd7d852729cae869cc32acc979100bd/29026822:hero:desktop_hero_media:f84814df-1051-4644-9bf6-0ee251f0e567.jpeg?auto=format&dpr=1&w=1920");
+}
+
+.bg-caro-drops {
+  height: 60vh;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.3) 40%),
+    url("https://i.seadn.io/s/primary-drops/0x35373efc2fd7d852729cae869cc32acc979100bd/29026822:hero:desktop_hero_media:f84814df-1051-4644-9bf6-0ee251f0e567.jpeg?auto=format&dpr=1&w=1920");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.bg-caro-drops::before {
+  filter: brightness(0.5);
+  z-index: -1;
+  background-color: black;
+}
