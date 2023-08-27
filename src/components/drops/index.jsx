@@ -6,6 +6,7 @@ import './app.css'
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import VerifiedIcon from '@mui/icons-material/Verified';
 import ListNFT from '../home/listNf';
+import { Link } from 'react-router-dom';
 
 function Drops() {
   return (
@@ -17,7 +18,7 @@ function Drops() {
             <div className='m-4 mx-0 h-1/12'>
               <p className='text-[2.75rem] text-white font-extrabold font-[poppins]'>Drops</p>
             </div>
-            <carousel className="mt-10 rounded-3xl flex  bg-caro-drops mr-6">
+            <Link to={'/profile'} className=" mt-10 rounded-3xl flex  bg-caro-drops mr-6">
               <div className='w-full h-92 mx-10  flex-col justify-end flex gap-6 pb-10 pt-20'>
                 <div className='bg-white h-16 w-16 rounded-xl p-0.5'>
                   <img src="https://i.seadn.io/s/primary-drops/0x35373efc2fd7d852729cae869cc32acc979100bd/29026822:hero:partner_logo_url:0766722a-e131-4968-ba71-2473bf8ad29f.jpeg?auto=format&dpr=1&w=1920" className='rounded-xl' alt="" />
@@ -32,7 +33,6 @@ function Drops() {
                     Minting Now!
                   </GlassButton>
                   <div className="gap-3 flex">
-
                     <GlassButton>
                       <NotificationsNoneIcon />
                     </GlassButton>
@@ -42,7 +42,7 @@ function Drops() {
                   </div>
                 </div>
               </div>
-            </carousel>
+            </Link>
           </div>
         </thumbnail>
         <div className='mx-8 py-4 flex gap-3 border-b border-gray-200'>
