@@ -14,8 +14,8 @@ const Carousel = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     afterChange: (index) => setCurrentSlide(index),
-    // autoplay: true,
-    // autoplaySpeed: 3000,
+    autoplay: true,
+    autoplaySpeed: 3000,
     // beforeChange: (current, next) => {
     //   setSelectedImage(next); // Update the selected image index
     // },

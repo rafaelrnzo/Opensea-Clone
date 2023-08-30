@@ -41,7 +41,9 @@ const Home = () => {
             </div>
             <carousel className="my-7 rounded-3xl flex h-full bg-caro mr-6">
               <div className='w-full h-full mx-10  flex-col justify-end flex gap-8 pb-10'>
-                <div className='bg-white h-16 w-16 rounded-xl'></div>
+                <div className='bg-white h-16 w-16 rounded-xl p-0.5'>
+                  <img src='https://i.seadn.io/gcs/files/33965e456423190852002039a8f31081.png?auto=format&dpr=1&w=256' className='rounded-lg'/>
+                </div>
                 <div className='gap-2 flex flex-col'>
                   <h1 className='text-3xl font-semibold text-white'>Persons, Places & Things - Dustin Yellin x Nouns x FWB</h1>
                   <h1 className='text-sm font-semibold text-white'>By DustinYellinDeployer</h1>

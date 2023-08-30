@@ -1,15 +1,28 @@
-.thumbnail-profile{
+.thumbnail-profile {
   height: 66.08vh;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.3) 40%, rgba(0, 0, 0, 0.3) 100%),
     url("https://i.seadn.io/s/primary-drops/0x35373efc2fd7d852729cae869cc32acc979100bd/29026822:hero:desktop_hero_media:e40a44a0-ace4-4172-b137-0768c6fbd2fb.jpeg?auto=format&dpr=1&w=3840");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
-  
 }
 
-.glass-card{
+.glass-card {
   /* @apply rounded-xl; */
   background-color: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(5px);
+}
+
+.rounded-video {
+  border: 0px solid transparent;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.thumbnail-content {
+  min-height: 80vh;
+  background: url("https://i.seadn.io/s/primary-drops/0x35373efc2fd7d852729cae869cc32acc979100bd/29026822:about:media:e94291e1-96a3-4b61-843f-dfdab34b4a47.jpeg?auto=format&dpr=1&w=3840");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
 }

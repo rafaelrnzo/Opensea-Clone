@@ -14,7 +14,7 @@ const NFTs = () => {
                 volume: '0.03 ETH',
               },
               {
-                image: 'https://i.seadn.io/gcs/files/20d243b2d04be331e23b9f7f36216de4.png?auto=format&dpr=1&h=500&fr=1 1x, https://i.seadn.io/gcs/files/20d243b2d04be331e23b9f7f36216de4.png?auto=format&dpr=1&h=500&fr=1 2x',
+                image: 'https://i.seadn.io/gcs/files/20d243b2d04be331e23b9f7f36216de4.png?auto=format&dpr=1&h=500&fr=1 ',
                 title: 'Persons, Places & Things - Dustin Yellin x Nouns x FWB',
                 floor: '< 0.01 ETH',
                 volume: '8 ETH',
